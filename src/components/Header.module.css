@@ -1,0 +1,328 @@
+/* Estilos para el componente Header */
+.nav {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  padding: 1rem 2rem !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: none !important;
+  position: relative;
+}
+
+/* Efecto adicional con overlay */
+.nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.navImg {
+  width: 110px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  background: transparent;
+}
+
+.navImg:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.brandText {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón hamburguesa personalizado */
+.hamburgerIcon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+/* Contenedor de botones de filtro */
+.filterButtons {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+}
+
+.btnHeader {
+  padding: 0.4rem 0.8rem !important;
+  border: none !important;
+  border-radius: 20px !important;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white !important;
+  min-width: 70px;
+  font-size: 0.85rem;
+  margin: 0.2rem;
+}
+
+.btnHeader:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+}
+
+.btnHeader:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estado activo para botones */
+.btnHeader.active {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) !important;
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+/* Estilos para el buscador */
+.searchContainer {
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.searchInput {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: white !important;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.searchInput:focus {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5) !important;
+  background-color: white !important;
+}
+
+.searchInput::placeholder {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.clearButton {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.clearButton:hover {
+  color: #dc3545;
+  background-color: #f8f9fa !important;
+}
+
+/* Colores por tipo de Pokémon para botones */
+.verTodos {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4) !important;
+  border: none !important;
+}
+
+.normal {
+  background-color: #a8a878 !important;
+}
+
+.fire {
+  background-color: #f08030 !important;
+}
+
+.water {
+  background-color: #6890f0 !important;
+}
+
+.grass {
+  background-color: #78c850 !important;
+}
+
+.electric {
+  background-color: #f8d030 !important;
+  color: #333 !important;
+}
+
+.ice {
+  background-color: #98d8d8 !important;
+  color: #333 !important;
+}
+
+.fighting {
+  background-color: #c03028 !important;
+}
+
+.poison {
+  background-color: #a040a0 !important;
+}
+
+.ground {
+  background-color: #e0c068 !important;
+  color: #333 !important;
+}
+
+.flying {
+  background-color: #a890f0 !important;
+}
+
+.psychic {
+  background-color: #f85888 !important;
+}
+
+.bug {
+  background-color: #a8b820 !important;
+}
+
+.rock {
+  background-color: #b8a038 !important;
+}
+
+.ghost {
+  background-color: #705898 !important;
+}
+
+.dark {
+  background-color: #705848 !important;
+}
+
+.dragon {
+  background-color: #7038f8 !important;
+}
+
+.steel {
+  background-color: #b8b8d0 !important;
+  color: #333 !important;
+}
+
+.fairy {
+  background-color: #ee99ac !important;
+  color: #333 !important;
+}
+
+/* Responsive design */
+@media (max-width: 991.98px) {
+  .nav {
+    padding: 1rem !important;
+  }
+  
+  .navImg {
+    width: 95px;
+  }
+  
+  .brandText {
+    font-size: 1.2rem;
+  }
+  
+  .searchContainer {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .filterButtons {
+    margin-top: 0.5rem;
+    justify-content: center !important;
+  }
+  
+  .btnHeader {
+    padding: 0.35rem 0.7rem !important;
+    font-size: 0.8rem;
+    min-width: 65px;
+    margin: 0.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .navImg {
+    width: 90px;
+  }
+  
+  .brandText {
+    font-size: 1.1rem;
+  }
+  
+  .searchInput {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .searchInput::placeholder {
+    font-size: 0.85rem;
+  }
+  
+  .btnHeader {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.75rem;
+    min-width: 60px;
+    margin: 0.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .navImg {
+    width: 85px;
+  }
+  
+  .brandText {
+    font-size: 1rem;
+  }
+  
+  .searchContainer {
+    margin: 0.25rem 0;
+  }
+  
+  .searchInput {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+  }
+  
+  .searchInput::placeholder {
+    font-size: 0.8rem;
+  }
+  
+  .btnHeader {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.7rem;
+    min-width: 55px;
+    margin: 0.1rem;
+    border-radius: 15px !important;
+  }
+  
+  .filterButtons {
+    gap: 0.25rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navImg {
+    width: 80px;
+  }
+  
+  .searchInput::placeholder {
+    content: "Buscar...";
+  }
+  
+  .btnHeader {
+    font-size: 0.65rem;
+    min-width: 50px;
+    padding: 0.2rem 0.4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .filterButtons {
+    margin-top: 0;
+  }
+  
+  .navImg {
+    width: 120px;
+  }
+}

@@ -1,0 +1,192 @@
+/* Estilos para el componente Home */
+.filterTitle {
+  color: #2c3e50;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.clearSearchBtn {
+  border-radius: 20px;
+  padding: 0.25rem 1rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.clearSearchBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pokemonCard {
+  transition: all 0.3s ease;
+  border: none !important;
+  border-radius: 15px !important;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  cursor: pointer;
+}
+
+.pokemonCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pokemonImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.pokemonCard:hover .pokemonImage {
+  transform: scale(1.1);
+}
+
+.pokemonName {
+  color: #2c3e50;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.typeBadge {
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pokemonStats {
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Colores para los badges de tipos */
+.typeBadge.normal {
+  background-color: #a8a878 !important;
+  color: white !important;
+}
+
+.typeBadge.fire {
+  background-color: #f08030 !important;
+  color: white !important;
+}
+
+.typeBadge.water {
+  background-color: #6890f0 !important;
+  color: white !important;
+}
+
+.typeBadge.grass {
+  background-color: #78c850 !important;
+  color: white !important;
+}
+
+.typeBadge.electric {
+  background-color: #f8d030 !important;
+  color: #333 !important;
+}
+
+.typeBadge.ice {
+  background-color: #98d8d8 !important;
+  color: #333 !important;
+}
+
+.typeBadge.fighting {
+  background-color: #c03028 !important;
+  color: white !important;
+}
+
+.typeBadge.poison {
+  background-color: #a040a0 !important;
+  color: white !important;
+}
+
+.typeBadge.ground {
+  background-color: #e0c068 !important;
+  color: #333 !important;
+}
+
+.typeBadge.flying {
+  background-color: #a890f0 !important;
+  color: white !important;
+}
+
+.typeBadge.psychic {
+  background-color: #f85888 !important;
+  color: white !important;
+}
+
+.typeBadge.bug {
+  background-color: #a8b820 !important;
+  color: white !important;
+}
+
+.typeBadge.rock {
+  background-color: #b8a038 !important;
+  color: white !important;
+}
+
+.typeBadge.ghost {
+  background-color: #705898 !important;
+  color: white !important;
+}
+
+.typeBadge.dark {
+  background-color: #705848 !important;
+  color: white !important;
+}
+
+.typeBadge.dragon {
+  background-color: #7038f8 !important;
+  color: white !important;
+}
+
+.typeBadge.steel {
+  background-color: #b8b8d0 !important;
+  color: #333 !important;
+}
+
+.typeBadge.fairy {
+  background-color: #ee99ac !important;
+  color: #333 !important;
+}
+
+/* Responsive para las tarjetas */
+@media (max-width: 576px) {
+  .pokemonImage {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .pokemonName {
+    font-size: 0.9rem;
+  }
+  
+  .typeBadge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
+  
+  /* Responsive para el buscador */
+  .searchContainer {
+    max-width: 280px;
+  }
+  
+  .searchInput {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .searchInput::placeholder {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    max-width: 350px;
+  }
+}

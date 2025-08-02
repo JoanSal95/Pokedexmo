@@ -1,0 +1,257 @@
+/* Estilos para la página de detalle del Pokémon */
+.pokemonCard {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  transition: all 0.3s ease;
+}
+
+.pokemonCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.pokemonName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pokemonNumber {
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #667eea, #764ba2) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+.imageContainer {
+  position: relative;
+  margin: 1rem 0;
+  padding: 2rem;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(240,240,240,0.6) 100%);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.02);
+}
+
+.pokemonImage {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.pokemonImage:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
+}
+
+.typeBadge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white !important;
+  margin: 0.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.typeBadgeSmall {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: white !important;
+  text-transform: capitalize;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.statsCard {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+}
+
+.statName {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.statValue {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.abilityBadge {
+  text-transform: capitalize;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.evolutionCard {
+  border: none !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+}
+
+.evolutionItem {
+  position: relative;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0.5rem;
+}
+
+.evolutionItem:hover {
+  background: rgba(102, 126, 234, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.currentEvolution {
+  background: linear-gradient(145deg, #667eea, #764ba2) !important;
+  color: white !important;
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3) !important;
+}
+
+.currentEvolution .evolutionName {
+  color: white !important;
+}
+
+.evolutionImage {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.evolutionItem:hover .evolutionImage {
+  transform: scale(1.1);
+}
+
+.evolutionName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0.5rem 0;
+}
+
+.evolutionArrow {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #667eea;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pokemonName {
+    font-size: 2rem;
+  }
+  
+  .pokemonImage {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .imageContainer {
+    padding: 1rem;
+  }
+  
+  .evolutionImage {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .evolutionArrow {
+    display: none !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .pokemonName {
+    font-size: 1.5rem;
+  }
+  
+  .pokemonImage {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .pokemonNumber {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .evolutionImage {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .evolutionName {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pokemonCard,
+.statsCard,
+.evolutionCard {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Efectos especiales para la versión shiny */
+.pokemonImage[src*="shiny"] {
+  filter: drop-shadow(0 0 20px gold) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  animation: sparkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes sparkle {
+  0% {
+    filter: drop-shadow(0 0 20px gold) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  }
+  100% {
+    filter: drop-shadow(0 0 30px gold) drop-shadow(0 0 40px rgba(255, 215, 0, 0.3)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  }
+}
