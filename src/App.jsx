@@ -4,7 +4,7 @@ import Pokemon from './pages/Pokemon'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Pokedexmo">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/pokemon/:id" element={<Pokemon />} />
