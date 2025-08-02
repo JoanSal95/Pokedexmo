@@ -26,7 +26,7 @@ function Header({
                 {/* Logo */}
                 <div className="navbar-brand d-flex align-items-center">
                     <img 
-                        src="./pokemon_transparente-removebg-preview.png" 
+                        src="/Pokedexmo/pokemon_transparente-removebg-preview.png" 
                         alt="Logo Pokédex"
                         className={`img-fluid ${styles.navImg}`}
                     />
